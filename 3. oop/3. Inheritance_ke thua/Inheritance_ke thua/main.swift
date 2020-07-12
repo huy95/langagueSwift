@@ -14,6 +14,7 @@ class Animal {// lop cha khong duoc ke tua tu thang nao ca
     var name: String = "" // thuoc tinh
     func eat(){ // phuong thuc an
         print("animal is eating...")
+        print(name)
     }
     var description: String { // thuoc tinh
         return "this is an animal \(self.name)"

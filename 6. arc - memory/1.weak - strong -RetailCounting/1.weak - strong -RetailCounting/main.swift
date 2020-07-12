@@ -73,7 +73,7 @@ class TestBT3: UserDelegate {
     let name = "Huy"
     // lazy var chỉ được khởi tạo khi dùng lân đầu
     lazy var nameBT3 : () -> String = { [weak self] in
-        return self?.name ?? ""
+        return self!.name
     }
     func showName() {
         print("Huy BT3")

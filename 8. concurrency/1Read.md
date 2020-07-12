@@ -3,6 +3,7 @@
 - tại sao phải dùng : 
  + để giữ trong UI luôn trạng thái được đáp ứng -> mượt hơn
  + tăng tốc độ sử lý, tận dụng tối đa sức mạnh kiến trúc chip
+ <img src="main.pdf">
 # một số vấn đề cần lưu ý trước :
   - process là quá trình hoat động của một ứng dụng
   - thread là luồng bên trong process
@@ -12,4 +13,8 @@
 # quản lí đa luồng trong ios :
    - Grand central dispatch(GCD)
    - NSOperation
+# sử dụng concurrent như thế nào?
+ -  chỉ định cách task chạy đồng thời
+ - chỉ định tài nguyên dùng chung
+ -> sử chỉ định tránh sử dụng trên main thread (dùng để load view) tránh giật lag
    

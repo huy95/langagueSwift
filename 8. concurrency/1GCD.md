@@ -4,7 +4,9 @@
   
    (API: kết nối giưa thư viện và ứng dung - application programming interface)
 ## Dispatch Queue là gì? - quản lí nhé
-   -  là queue tạo ra để quản lí và sử lí các task đồng thời hay tuần tự
+-  là  queue(hàng đợi) tạo ra để: + quản lí và sử lí các task đồng thời hay tuần tự
+                                                    + lưu các tash sẽ được thực thi + xử lí theo thứ tự FIFO
+                <img src="dispatchQueue">
    - Để sử dụng dispatch queue, chúng ta viết code dưới dạng các block, gán các block vào các dispatch queue để yêu cầu GCD xử lý.
    -  Có 2 loại dispatch queue : serial queue hoặc concurrent queue
 
