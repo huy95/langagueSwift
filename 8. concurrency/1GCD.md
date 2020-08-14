@@ -50,9 +50,20 @@ trong nó còn có 2 kiểu là :
     
     3. GCD mở rộng
        • Dispatch After
-       • DispatchSemaphore • DispatchBarrier
+       • DispatchSemaphore
+       • DispatchBarrier
        • DispatchGroup
 
 # các vấn đề Multi Thread
 - Data race (Thread safe) : Nói về Array và Dictionary trong ios
 - Deadlock
+# ro hon xem :
+https://techblog.vn/grand-central-dispatch-part-1
+
+
+#  Custom concurrent: 
+- after - cho vào 1 hàng sau bao nhiêu thời gian thì nó lại cho 1 sp trong hàng ra
+- semafor - DispatchSemaphore(value: 2)//value = 2 toi da so luong chay qua no ( chi 2 thằng được vao) - đợi thằng vào tính xong thì mới cho thằng tiếp vào
+- berrier  - Dispatchbarrer : đản bảo thời điểm barrer(task- có 1 barrer) trong conser thành serial thành 1 queue - sau đó các task sau bắt đầu
+- group - DispatchGroup - manh hon barrer
+ 
